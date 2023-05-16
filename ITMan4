@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int hourStop = scanner.nextInt();
+        int minStop = scanner.nextInt();
+        int secStop = scanner.nextInt();
+        int hourAdd = scanner.nextInt();
+        int minAdd = scanner.nextInt();
+        int secAdd = scanner.nextInt();
+       
+        int secNow = secAdd + secStop;
+        if (secNow > 59) {
+            secNow = secNow % 60;
+            minAdd = minAdd + 1;
+        }
+        int minNow = minStop + minAdd;
+        if (minNow > 59) {
+            minNow = minNow % 60;
+            hourAdd = hourAdd + 1;
+        }
+        int hourNow = hourStop + hourAdd;
+        if (hourNow > 23) {
+            hourNow = hourNow % 24;
+        }
+        System.out.println(hourNow + " " + minNow + " " + secNow);
+        
+    }
+}
