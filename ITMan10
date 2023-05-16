@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String a = scanner.next();
+        String b = scanner.next();
+        String c = scanner.next();
+        String z = "true";
+        String x = "false";
+        if ((a.equals(z) && b.equals(z)) || (b.equals(z) && c.equals(z)) || (c.equals(z) && a.equals(z)) || (c.equals(z) && a.equals(z) && b.equals(z)) || (c.equals(x) && a.equals(x) && b.equals(x))){
+            System.out.println("false");
+        }
+        else {
+            System.out.println("true");
+        }
+    }
+}
