@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String a = scanner.next();
+        String b = scanner.next();
+        String c = scanner.next();
+        String z = a + b;
+        String x = b + a;
+        if (z.equals(c) || x.equals(c)) {
+           System.out.println("true");
+        } 
+        else {
+            System.out.println("false");
+        }
+    }
+}
