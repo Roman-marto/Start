@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int H = scanner.nextInt();
+        int M = scanner.nextInt();
+        int S = scanner.nextInt();
+        if (H <= 9) {
+            System.out.print("0" + H + ":");
+        }
+        else {
+            System.out.print(H + ":");
+        }
+        if (M <= 9) {
+            System.out.print("0" + M + ":");
+        }
+        else {
+            System.out.print(M + ":");
+        }
+        if (S <= 9) {
+            System.out.print("0" + S);
+        }
+        else {
+            System.out.print(S);
+        }
+    }
+}
