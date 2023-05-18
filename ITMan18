@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextDouble();
+        String op = scanner.next();
+        double b = scanner.nextDouble();
+        double c = 0;
+        switch (op) {
+            case "+":
+            c = a + b;
+            break;
+            case "-":
+                c = a - b;
+                break;
+            case "*":
+                c = a * b;
+                break;
+            case "/":
+                c = a / b;
+                break;
+        }
+        System.out.println(c);
+    }
+}
