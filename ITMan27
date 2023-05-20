@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int a1 = scanner.nextInt();
+        int d = scanner.nextInt();
+        int t = a1;
+        System.out.println(a1);
+        for (int i = 0; i < n - 1; i++) {
+            t = t + d;
+            System.out.println(t);
+        }
+    }
+}
