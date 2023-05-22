@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Program {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] array = new int[n];
+        int min = Integer.MIN_VALUE;
+        int max = Integer.MAX_VALUE;
+        int result = 0;
+        int indexMin = 0;
+        int indexMax = 0;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt(); 
+            if (min < array[i]) {
+                min = array[i];
+            }
+            if (max > array[i]) {
+                max = array[i];
+            }
+            if (array[i] < array[indexMin]) {
+                indexMin = i;
+            }
+            if (array[i] >= array[indexMax]) {
+                    indexMax = i;
+            }
+        }
+        for (int i = indexMin; i <= indexMax; i++) {
+                if ((array[i] <= min) && (array[i] >= max) && (indexMax != i) && (indexMin != i)) {
+                result = result + array[i];
+                } 
+        } 
+        for (int i = indexMax; i <= indexMin; i++) {
+                if ((array[i] <= min) && (array[i] >= max) && (indexMax != i) && (indexMin != i)) {
+                result = result + array[i];
+                } 
+        }
+        for (int i = indexMax; i == indexMin; i++) {
+                result = result + array[i] * (n - 2);
+        }
+       System.out.println(result);
+    }
+}
