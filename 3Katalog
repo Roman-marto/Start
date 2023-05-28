@@ -1,0 +1,8 @@
+class Main{
+    public static void main(String[] args){
+        System.out.println (yourArg("2"));
+    }
+    public static String yourArg(String argument) {
+    return "Переданный аргумент: " + argument;
+    }
+}
