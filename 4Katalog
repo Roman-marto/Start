@@ -1,0 +1,11 @@
+import java.util.Random;
+class Main{
+    public static void main(String[] args){
+		int x = getRand();
+        System.out.println(x);
+    }
+    public static int getRand() {
+    Random rand = new Random();
+    return (int) rand.nextInt();
+    }
+}
