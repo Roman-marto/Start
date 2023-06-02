@@ -1,0 +1,19 @@
+public class App {
+    public static String getNumberExplanation(int num) {
+        String result = "";
+        switch (num) {
+            case 666:
+                result = "devil number";
+                break;
+            case 42:
+                result = "answer for everything";
+                break;
+            case 7:
+                result = "prime number";
+                break;
+            default:
+            result = "just a number";
+        }
+        return result;
+    }
+}
