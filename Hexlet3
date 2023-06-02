@@ -1,0 +1,15 @@
+public class App {
+    public static int countChars(String str, char ch) {
+        int i = 0;
+        int count = 0;
+        str = str.toLowerCase();
+        ch = Character.toLowerCase(ch);
+        while (i < str.length()) {
+            if (str.charAt(i) == ch) {
+               count += 1;
+           }
+           i++;
+        }
+        return count;
+    }
+}
