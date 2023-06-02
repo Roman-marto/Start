@@ -1,0 +1,17 @@
+import org.apache.commons.lang3.StringUtils;
+
+public class App {
+    public static String convertString(String a) {
+        String result = "";
+        if (a.equals("")) {
+           result = "";
+        }
+        else if (Character.isUpperCase(a.charAt(0)) == true) {
+            result = a;
+        }
+        else if (Character.isUpperCase(a.charAt(0)) == false) {
+            result = StringUtils.reverse(a);
+        }
+        return result;
+    }
+}
