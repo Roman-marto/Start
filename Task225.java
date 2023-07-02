@@ -21,7 +21,7 @@ public class Task225 {
                     array[i][j] = count;
                 }
             }
+            out.println(Arrays.deepToString(array).replace("],", "]\n"));
         }
-        out.println(Arrays.deepToString(array).replace("],", "]\n"));
     }
 }
